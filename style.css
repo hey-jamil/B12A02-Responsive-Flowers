@@ -242,3 +242,121 @@ nav {
         font-size: 14px;
     }
 }
+
+/* plant Sectoion css */
+
+
+.plant-section {
+    width: 1140px;
+    margin: auto;
+    margin-top: 210px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.plant-img {
+    position: relative;
+}
+
+.plant-img .flower-store {
+    width: 540px;
+}
+
+.plant-text {
+    width: 540px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 20px;
+}
+
+.plant-text h2 {
+    font-size: 50px;
+}
+
+.plant-text ul {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.507);
+}
+
+.plant-text ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 20px;
+}
+
+.trusted-badge {
+    width: 280px;
+    position: absolute;
+    top: -20%;
+    right: -20%;
+    animation: rotation 5s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .plant-section {
+        width: 100%;
+        margin-top: 30px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+    }
+
+    .break {
+        display: none;
+    }
+
+    .plant-img .flower-store {
+        width: 360px;
+    }
+
+    .plant-text {
+        width: 360px;
+        height: auto;
+
+    }
+
+    .plant-text h2 {
+        font-size: 24px;
+
+    }
+
+    .plant-text ul {
+        font-size: 14px;
+        width: 320px;
+        margin: auto;
+    }
+
+    .plant-text ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: left;
+        gap: 20px;
+    }
+
+    .trusted-badge {
+        display: none;
+    }
+
+}
