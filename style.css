@@ -163,3 +163,82 @@ nav {
     }
 }
 
+/* shop css */
+
+
+.shop-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.shop-header>h2 {
+    font-size: 50px;
+}
+
+.shop-header>p {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.514);
+}
+
+.card-div {
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.card {
+    width: 270px;
+    height: 500px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.card img {
+    margin-bottom: 30px;
+}
+
+.card-div button {
+    width: 100%;
+    padding: 10px 50px;
+    color: white;
+    border: none;
+    background-color: #E95A08;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 480px) {
+    .card-div {
+        max-width: 380px;
+        margin: auto;
+
+        justify-content: center;
+    }
+
+    .card {
+        width: 170px;
+        height: 340px;
+        margin-bottom: 25px;
+        font-size: 16px;
+    }
+
+    .card img {
+        width: 170px;
+    }
+
+    .card-div button {
+        padding: 10px 25px;
+
+    }
+
+    .shop-header>h2 {
+        font-size: 24px;
+    }
+
+    .shop-header>p {
+        font-size: 14px;
+    }
+}
