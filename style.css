@@ -1,0 +1,165 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* fonts css */
+
+
+.noto-serif-bold {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.inter-regular {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.inter-bold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.inter-semiBold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.inter-medium {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* nav CSS */
+body {
+    background-color: #F5F8FF;
+}
+
+.cart-icon {
+    border: 1px black solid;
+    color: white;
+}
+
+nav {
+    width: 1140px;
+    margin: 20px auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: #8987A1;
+}
+
+#active {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.mobile-navbar {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        width: 360px;
+    }
+
+    nav img {
+        width: 60px;
+    }
+
+    .dextop-navbar {
+        display: none;
+    }
+
+    .mobile-navbar {
+        display: inline-block;
+    }
+
+    #active img {
+        width: 24px;
+        height: 24px;
+    }
+
+    #active {
+        font-size: 16px;
+    }
+}
+
+
+/* Hero Section CSS */
+
+.hero-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 1140px;
+    margin: auto;
+    margin-bottom: 120px;
+    padding-top: 180px;
+}
+
+.orange {
+    color: #E95A08;
+}
+
+.hero-section>div>h1 {
+    font-size: 62px;
+}
+
+.hero-section>div>p {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.486);
+}
+
+@media screen and (max-width: 480px) {
+    .hero-section {
+        flex-direction: column-reverse;
+        width: 100%;
+        gap: 28px;
+        padding-top: 30px;
+        margin-bottom: 60px;
+    }
+
+    .hero-section>div>h1 {
+        font-size: 24px;
+        margin-bottom: 13px;
+    }
+
+    .hero-section>div>p {
+        font-size: 14px;
+    }
+
+    .hero-section img {
+        width: 100%;
+    }
+}
+
